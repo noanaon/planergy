@@ -11,3 +11,12 @@ def colony(request):
 
 def livingroom(request):
     return render(request, 'marsapp/livingroom.html')
+
+def bedroom(request):
+    return render(request, 'marsapp/bedroom.html')
+
+def bathroom(request):
+    return render(request, 'marsapp/bathroom.html')
+
+def kitchen(request):
+    return render(request, 'marsapp/kitchen.html')

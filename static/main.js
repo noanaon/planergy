@@ -41,18 +41,18 @@ var ctx1 = document.getElementById("pieChart1");
 var pieChart1 = new Chart(ctx1, {
     type: 'RoundedDoughnut',
     options: {
+        responsive: true,
         cutoutPercentage: 75,
         legend: {
             position: 'bottom',
             labels: {
-                boxWidth: 10,
+                boxWidth: 50,
                 fontStyle: 'italic',
                 fontColor: '#000000',
-                fontSize:20,
+                fontSize:13,
                 usePointStyle: true,
             }
         },
-
     },
     data: {
         labels: [
@@ -66,16 +66,16 @@ var pieChart1 = new Chart(ctx1, {
                 data: [250, 100, 100, 200],
                 borderWidth: 0,
                 backgroundColor: [
-                    '#630505',
-                    '#752e16',
+                    "#630505",
+                    "#edd9d5",
                     "#8c3838",
                     "#d1885e"
                 ],
                 hoverBackgroundColor: [
-                    '#453d38',
-                    '#453d38',
-                    "#453d38",
-                    "#453d38"
+                    "#d4d2d2",
+                    "#d4d2d2",
+                    "#d4d2d2",
+                    "#d4d2d2"
                 ]
             }]
         }
