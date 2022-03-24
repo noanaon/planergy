@@ -1,48 +1,48 @@
 {% extends 'marsapp/main.html' %}
 
 {% block content %}
-<div class="progress my-4">
-    <div class="progress-bar bg-danger" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
-    <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
-    <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+<!-- <div class="progress my-4">
+    <div class="progress-bar" id="prog" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div> -->
 
-<div class="my-3 row">
+
+
+<div class="my-5 row">
     <div class="col">
-      <div class="card">
+      <div class="card" id="bathroom">
         <div class="card-body">
-          <h5 class="card-title">BATHROOM</h5>
-          <p class="card-text">ENERGY SPENT: 3%</p>
-          <a href="{% url 'bathroom' %}" class="btn btn-outline-dark">SELECT DEVICES</a>
+          <h6 class="card-title fw-light">BATHROOM</h6>
+          <h2 class="card-text fw-light">3%</h2>
+          <a href="{% url 'bathroom' %}" class="stretched-link"></a>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card">
+      <div class="card" id="kitchen">
         <div class="card-body">
-          <h5 class="card-title">KITCHEN</h5>
-          <p class="card-text">ENERGY SPENT: 7%</p>
-          <a href="{% url 'kitchen' %}" class="btn btn-outline-dark">SELECT DEVICES</a>
+          <h6 class="card-title fw-light">KITCHEN</h6>
+          <h2 class="card-text fw-light">7%</h2>
+          <a href="{% url 'kitchen' %}" class="stretched-link"></a>
         </div>
       </div>
     </div>
 </div>
 <div class="my-3 row">
-    <div class="col">
-      <div class="card">
+    <div class="col-6">
+      <div class="card" id='livingroom'>
         <div class="card-body">
-          <h5 class="card-title">LIVINGROOM</h5>
-          <p class="card-text">ENERGY SPENT: 0%</p>
-          <a href="{% url 'livingroom' %}" class="btn btn-outline-dark">SELECT DEVICES</a>
+          <h6 class="card-title fw-light">LIVING ROOM</h6>
+          <h2 class="card-text fw-light">0%</h2>
+          <a href="{% url 'livingroom' %}" class="stretched-link"></a>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
+    <div class="col-6">
+      <div class="card" id="bedroom">
         <div class="card-body">
-          <h5 class="card-title">BEDROOM</h5>
-          <p class="card-text">ENERGY SPENT: 0%</p>
-          <a href="{% url 'bedroom' %}" class="btn btn-outline-dark">SELECT DEVICES</a>
+          <h6 class="card-title fw-light">BEDROOM</h6>
+          <h2 class="card-text fw-light">1%</h2>
+          <a href="{% url 'bedroom' %}" class="stretched-link"></a>
         </div>
       </div>
     </div>
