@@ -2,13 +2,13 @@
 
 {% block content %}
 
-
+    <p class='bg-danger text-white mt-3 fw-light'id="minus"></p>
 
 
       <div class="my-3 card">
         <div class="card-body">
             <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1" onclick="window.location.assign('l')">
+                <input class="form-check-input" type="checkbox" checked='true' id="flexSwitchCheckDefault1" onclick="window.location.assign('I')">
                 <label class="form-check-label" for="flexSwitchCheckDefault1">reading lamp</label>
             </div>
         </div>
@@ -42,5 +42,24 @@
         </div>
     </div>
 
+    <script>
+            var progressBar = document.getElementById('prog');
+            var progressNumber = 10;
+            setInterval(function(){
+            progressNumber--;
+            progressBar.style.width = progressNumber + '%';
+            progressBar.setAttribute('aria-valuenow', progressNumber);
+            progressBar.innerHTML = progressNumber + '%';
+            console.log(progressNumber);
+            if (progressNumber < 0){
+                document.getElementById('minus').innerHTML = 'Extra spent: ' + progressNumber * -60 + ' Joule';
+            } else if
+                (progressNumber==4){
+                window.alert("WARNING!!! Be careful, the available energy left is running low! In case of excess energy use your fellow Martians allocated energy might be affected...");
+            } 
+        }, 1000);
+    </script>
+
 
 {% endblock %}
+

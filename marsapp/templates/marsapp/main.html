@@ -21,12 +21,12 @@
     <div class='mt-3 text-end'>
         <p class='mb-3 fs-6 fw-light' >JANE DOE</p>
     </div>
-    <div class='mt-4 mb-5 text-center'>
+    <div class='mt-4 mb-3 text-center'>
         <h1 class='fw-light'>P L A N E R G Y</h1>
     </div>
-
-    <div class="progress mb-3">
-        <div  class="progress-bar" id="prog" role="progressbar" style="width:90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    <p class='fw-light'>Hi Jane, this is your energy budget today:</p>
+    <div class="progress">
+        <div  class="progress-bar" id="prog" role="progressbar" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
     </div>
     {% block content %} 
     
@@ -35,7 +35,7 @@
 
     <div class="mb-5 fixed-bottom">
         <a class="btn mx-1 btn-outline-dark" href="{% url 'colony' %}">COLONY</a>
-        <a class="btn mx-1 btn-outline-dark">STATS</a>
+        <a class="btn mx-1 btn-outline-dark" href="{% url 'stats' %}">STATS</a>
         <a class="btn mx-1 btn-outline-dark" href="{% url 'home' %}">DEVICES</a>
     </div>
 
@@ -47,7 +47,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     
     <script src="{% static 'main_1.js' %}"></script>
-    <script src="{% static 'main_2.js' %}"></script>
+    <!-- <script src="{% static 'main_2.js' %}"></script> -->
+    <!-- <script src="{% static 'main_3.js' %}"></script> -->
 
 </body>
 </html>
